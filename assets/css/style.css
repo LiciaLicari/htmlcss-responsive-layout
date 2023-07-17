@@ -1,18 +1,205 @@
+/* #region Common*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-}
 
 :root {
+    --rl-white: #fefffe;
+    --rl-dark: #323233;
+    --rl-light: #b5ddff;
     --rl-primary: #9793e5;
-    --rl-secondary: #fefffe;
-    --rl-heanvenly: #0084fd;
-    --rl-light-heanvenly: #b5ddff;
-    --rl-special: #fdc15f;
-    --rl-footer: #323233;
+    --rl-secondary: #0084fd;
+    --rl-accent: #fdc15f;
 }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--rl-white);
+}
+
+/* #region Common*/
+
+/* #region Utilities */
+
+.container
+{
+	max-width: 1152px;
+	width: 80%;
+	margin: auto;
+}
+/*rimangono fuori 24 e 24 pxl*/
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+}
+
+[class^='col-']
+{
+	padding: 0 1rem;
+}
+
+.col-4
+{
+	width: calc(100% / 12 * 4);
+}
+
+.col-6
+{
+	width: calc(100% / 12 * 6);
+}
+
+.col-8
+{
+	width: calc(100% / 12 * 8);
+}
+
+.col-12
+{
+	width: 100%;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none
+{
+	display: none;
+}
+
+.d-block
+{
+	display: block;
+}
+
+/* #endregion Utilities */
+
+
+/*************************************/
+/************* MOBILE FIRST **********/
+/*************************************/
+
+/* #region #site_header */
+header
+{
+	background-color: var(--rl-secondary);
+}
+
+header nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+header nav > .mobile_menu
+{
+	color: var(--rl-white);
+} 
+
+header nav > .desktop_menu
+{
+	display: none;
+} 
+
+/* #endregion #site_header */
+
+/* #region #site_main */
+/* #endregion #site_main  */
+
+/* Tablet media query */
+
+@media screen and (min-width: 768px)
+{
+	.d-md-none
+	{
+		display: none;
+	}
+
+	.d-md-block
+	{
+		display: block;
+	}
+
+	.col-md-4
+	{
+		width: calc(100% / 12 * 4);
+	}
+
+	.col-md-6
+	{
+		width: calc(100% / 12 * 6);
+	}
+
+	.col-md-8
+	{
+		width: calc(100% / 12 * 8);
+	}
+
+	.col-md-12
+	{
+		width: 100%;
+	}
+}
+
+
+
+/* Desktop media query */
+
+@media screen and (min-width: 1200px) {
+
+    #site_header .mobile_menu {
+        display: none;
+    }
+
+    #site_header .desktop_menu {
+        display: block;
+    }
+
+
+
+
+
+/* #region Debug  */
+.debug #site_header
+{
+	height: 75px;
+	background-color: lightblue;
+}
+
+.debug #site_main
+{
+	height: 1500px;
+	background-color: lightcoral;
+}
+
+.debug #site_footer
+{
+	height: 150px;
+	background-color: lightseagreen;
+}
+
+.debug [class^='col-']
+{
+	background-color: lightgoldenrodyellow;
+	height: 200px;
+	border: 1px dashed midnightblue;
+}
+
+/* #endregion Debug */
