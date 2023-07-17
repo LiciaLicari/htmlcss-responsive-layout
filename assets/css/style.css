@@ -218,17 +218,33 @@ header nav > .desktop_menu
 	background-color: lightcoral;
 }
 
+.debug #services [class^='col-']
+{
+	background-color: lightgoldenrodyellow;
+	height: 250px;
+	border: 1px dashed midnightblue;
+    padding: 1rem;
+}
+.debug .card {
+    background-color: lightpink;
+    height: 100%;
+}
+
+.debug .card_text {
+    background-color: burlywood;
+    height: 100px;
+}
+
+.debug .card_img {
+    background-color: violet;
+    height: 100px;
+}
+
 .debug #site_footer
 {
 	height: 150px;
 	background-color: lightseagreen;
 }
 
-.debug [class^='col-']
-{
-	background-color: lightgoldenrodyellow;
-	height: 200px;
-	border: 1px dashed midnightblue;
-}
 
 /* #endregion Debug */
