@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --rl-primary: #9793e5;
+    --rl-secondary: #fefffe;
+    --rl-heanvenly: #0084fd;
+    --rl-light-heanvenly: #b5ddff;
+    --rl-special: #fdc15f;
+    --rl-footer: #323233;
+}
