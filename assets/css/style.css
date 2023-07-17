@@ -9,19 +9,19 @@
 
 :root {
     --rl-white: #fefffe;
+    --rl-black: #000000;
     --rl-dark: #323233;
-    --rl-light: #b5ddff;
     --rl-primary: #9793e5;
     --rl-secondary: #0084fd;
+    --rl-secondary-light: #b5ddff;
     --rl-accent: #fdc15f;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: var(--rl-white);
 }
 
-/* #region Common*/
+/* #endregion Common*/
 
 /* #region Utilities */
 
@@ -65,6 +65,10 @@ body {
 	width: 100%;
 }
 
+.text-decoration-none {
+    text-decoration: none;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
@@ -95,9 +99,13 @@ body {
 /*************************************/
 
 /* #region #site_header */
-header
-{
+#site_header {
 	background-color: var(--rl-secondary);
+    color: var(--rl-white);
+}
+
+#site_header a {
+    color: var(--rl-white);
 }
 
 header nav
@@ -117,6 +125,12 @@ header nav > .desktop_menu
 {
 	display: none;
 } 
+#site_header .logo,
+#site_header .mobile_menu,
+#site_header .desktop_menu {
+    padding: 0.2rem 0;
+    padding: 0.2rem 0;
+}
 
 /* #endregion #site_header */
 
@@ -172,7 +186,17 @@ header nav > .desktop_menu
         display: block;
     }
 
-
+    #site_header a {
+        color: var(--rl-white);
+        margin-left: 2rem;
+    }
+    #site_header .desktop_menu a:last-child {
+        background-color: var(--rl-white);
+        color: var(--rl-black);
+        text-align: center;
+        padding: 0.35rem 1rem ;
+        border-radius: 15px;
+    }
 
 
 
