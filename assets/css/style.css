@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 :root {
     --rl-white: #fefffe;
@@ -256,8 +260,8 @@ header nav>.desktop_menu {
 }
 
 #testimonials .card_testimonial img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     /* flex-shrink: 0;*/
@@ -268,6 +272,68 @@ header nav>.desktop_menu {
 }
 
 /* #endregion #testimonials */
+
+/* #region #benefits */
+
+#testimonials .card_testimonial {
+    background-color: var(--rl-primary);
+    color: var(--rl-white);
+    border-radius: 30px;
+    padding: 2rem 2rem;
+    margin: 1rem 0;
+    height: 100%;
+}
+
+#testimonials .container h5 {
+    color: var(--rl-dark);
+    font-weight: lighter;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#testimonials .container h2 {
+    color: var(--rl-primary);
+    padding-bottom: 2rem;
+}
+
+#testimonials .container p {
+    color: var(--rl-lightdark);
+    font-size: small;
+    padding-bottom: 2rem;
+    line-height: 180%;
+
+}
+
+#testimonials .card_text p {
+    color: var(--rl-white);
+    padding: 1rem 0;
+    line-height: 200%;
+    font-weight: lighter;
+}
+
+#testimonials .card .card_text a {
+    color: var(--rl-white);
+    background-color: var(--rl-secondary);
+    letter-spacing: .15rem;
+}
+
+#testimonials .card_testimonial img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* flex-shrink: 0;*/
+}
+
+#testimonials .card>*:last-child {
+    margin-top: 1rem;
+}
+
+
+
+
+/* #endregion #benefits */
+
 
 /* #endregion #site_main  */
 
@@ -312,6 +378,22 @@ header nav>.desktop_menu {
         display: block;
         max-width: 100%;
     }
+
+    #testimonials header{
+        padding-bottom: 1.5rem;
+    }
+
+    #testimonials .card {
+        padding: 0rem 1rem;
+    }
+    
+    #testimonials .card .testimonial-text{
+        padding: 1.5rem;
+    }
+
+    #testimonials header h1 {
+        padding-top: 1rem;
+    }
 }
 
 
@@ -352,6 +434,22 @@ header nav>.desktop_menu {
 
     .col-lg-6 {
         width: calc(100% / 12 * 6);
+    }
+
+    #testimonials header h5,
+    #testimonials p {
+        font-size: 1.2rem;
+    }
+
+    #testimonials header h2 {
+        font-size: 3rem;
+    }
+
+    
+    #testimonials .img {
+        width: 200px;
+        height: 200px;
+        margin: 2rem 3rem 2rem 1rem;
     }
 
 }
