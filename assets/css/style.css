@@ -42,11 +42,10 @@ body {
 [class^='col-']
 {
 	padding: 1rem 1rem;
-    background-color: var(--rl-secondary-light);
     border-radius: 1rem;
     margin-top: 2rem;
 }
-}
+
 
 .col-4
 {
@@ -78,6 +77,14 @@ body {
 
 .align-center {
     align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .d-flex {
@@ -138,6 +145,53 @@ header nav > .desktop_menu
 /* #endregion #site_header */
 
 /* #region #site_main */
+
+/* #region #services */
+
+#services .card {
+    background-color: var(--rl-secondary-light);
+    border-radius: 20px;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+#services .card .card_text {
+    font-weight: bold;
+    color: var(--rl-white);
+}
+
+#services .card .card_text h2 {
+    color: var(--rl-secondary);
+    margin: 1.5rem 0;
+}
+
+#services .card .card_text p {
+    margin-bottom: 2rem;
+    /* line-height: 170%; */
+}
+
+#services .card .card_text a {
+    color: var(--rl-white);
+    background-color: var(--rl-secondary);
+    letter-spacing: .15rem;
+}
+
+#services .card .card_img {
+    text-align: center;
+    padding-top: 2rem;
+    line-height: 0;
+    color: var(--rl-secondary);
+}
+
+#services .card>*:last-child {
+    margin-top: 1rem;
+}
+
+
+/* #endregion #services */
+
+
+
 /* #endregion #site_main  */
 
 /* Tablet media query */
@@ -247,4 +301,4 @@ header nav > .desktop_menu
 }
 
 
-/* #endregion Debug */
+/* #endregion Debug */     
