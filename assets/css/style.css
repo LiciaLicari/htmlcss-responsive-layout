@@ -310,7 +310,7 @@ header nav > .desktop_menu
     }
 
     .col-lg-6 {
-        max-width: calc(100 / 12 * 6);
+        width: calc(100% / 12 * 6);
     }
 
 }
@@ -341,7 +341,6 @@ header nav > .desktop_menu
 .debug #planning [class^='col-']
 {
 	background-color: lightgoldenrodyellow;
-	height: 1500px;
 	border: 1px dashed midnightblue;
     padding: 1rem;
 }
