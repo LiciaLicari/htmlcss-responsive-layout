@@ -10,7 +10,7 @@
 :root {
     --rl-white: #fefffe;
     --rl-black: #000000;
-    --rl-dark: #323233;
+    --rl-dark: #333232;
     --rl-lightdark: #5b6f7f;
     --rl-primary: #9793e5;
     --rl-secondary: #0084fd;
@@ -221,6 +221,61 @@ header nav > .desktop_menu
 
 /* #endregion #planning */
 
+/* #region #testimonials */
+
+#testimonials .card_testimonial {
+    background-color: var(--rl-primary);
+    color: var(--rl-white);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    margin: 1rem 0;
+    height: 100%;
+}
+
+#testimonials .container h5 {
+    color: var(--rl-dark);
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+
+#testimonials .container h2 {
+    color: var(--rl-primary);
+    padding: 1rem 0;
+}
+
+#testimonials .container p {
+    color: var(--rl-lightdark);
+    font-size: small;
+   
+    padding-bottom: 2rem;
+}
+
+#testimonials .card_text p {
+    margin-bottom: 2rem;
+    color: var(--rl-white);
+}
+
+#testimonials .card .card_text a {
+    color: var(--rl-white);
+    background-color: var(--rl-secondary);
+    letter-spacing: .15rem;
+}
+
+#testimonials .card_testimonial .avatar .bob,
+#testimonials .card_testimonial .avatar .nat,
+#testimonials .card_testimonial .avatar .celia {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+#testimonials .card>*:last-child {
+    margin-top: 1rem;
+}
+/* #endregion #testimonials */
 
 /* #endregion #site_main  */
 
@@ -349,7 +404,7 @@ header nav > .desktop_menu
     background-color: lightpink;
     height: 100%;
 }
-
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFqMWEwOGZoODZlNDd0aXZucDhieDl3aHJlMTZlcnBrcHB6ODBvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kmBe7ulPXY0KI/giphy.gif
 .debug .card_text {
     background-color: burlywood;
     height: 100px;
