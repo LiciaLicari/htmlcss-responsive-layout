@@ -11,6 +11,7 @@
     --rl-white: #fefffe;
     --rl-black: #000000;
     --rl-dark: #323233;
+    --rl-lightdark: #5b6f7f;
     --rl-primary: #9793e5;
     --rl-secondary: #0084fd;
     --rl-secondary-light: #b5ddff;
@@ -101,6 +102,21 @@ body {
 	display: block;
 }
 
+.btn {
+    background-color: var(--rl-white);
+    color: var(--rl-black);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+}
+
+.btn-lg {
+    display: inline-block;
+    background-color: var(--rl-white);
+    color: var(--rl-black);
+    padding: 0.8rem 3rem;
+    border-radius: 25px;
+}
+
 /* #endregion Utilities */
 
 
@@ -167,7 +183,7 @@ header nav > .desktop_menu
 
 #services .card .card_text p {
     margin-bottom: 2rem;
-    /* line-height: 170%; */
+    color: var(--rl-lightdark);
 }
 
 #services .card .card_text a {
@@ -227,6 +243,21 @@ header nav > .desktop_menu
 	{
 		width: 100%;
 	}
+
+    .f-direction-row-md {
+        flex-direction: row;
+    }
+
+    #services .card .btn-lg {
+        display: block;
+        max-width: 50%;
+        padding: .4rem 1.5rem;
+    }
+    
+    #services .img-fluid {
+        display: block;
+        max-width: 50%;
+    }
 }
 
 
@@ -253,6 +284,15 @@ header nav > .desktop_menu
         text-align: center;
         padding: 0.35rem 1rem ;
         border-radius: 15px;
+    }
+
+    #site_main #services .demo .card_img {
+        align-self: end;
+    }
+
+    #site_main #services .demo .card_img img {
+        display: inline-block;
+        min-width: 60%;
     }
 
    
