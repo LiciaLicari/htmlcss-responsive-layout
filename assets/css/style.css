@@ -162,7 +162,7 @@ header nav > .desktop_menu
 
 #services .card .card_text h2 {
     color: var(--rl-secondary);
-    margin: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 #services .card .card_text p {
