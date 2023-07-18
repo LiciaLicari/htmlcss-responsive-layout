@@ -1,6 +1,6 @@
 /* #region Common*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,46 +30,40 @@ img {
 
 /* #region Utilities */
 
-.container
-{
-	max-width: 1152px;
-	width: 80%;
-	margin: auto;
+.container {
+    max-width: 1152px;
+    width: 80%;
+    margin: auto;
 }
+
 /*rimangono fuori 24 e 24 pxl*/
 
-.row
-{
-	display: flex;
-	flex-wrap: wrap;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-[class^='col-']
-{
-	padding: 1rem 1rem;
+[class^='col-'] {
+    padding: 1rem 1rem;
     border-radius: 1rem;
     margin-top: 2rem;
 }
 
 
-.col-4
-{
-	width: calc(100% / 12 * 4);
+.col-4 {
+    width: calc(100% / 12 * 4);
 }
 
-.col-6
-{
-	width: calc(100% / 12 * 6);
+.col-6 {
+    width: calc(100% / 12 * 6);
 }
 
-.col-8
-{
-	width: calc(100% / 12 * 8);
+.col-8 {
+    width: calc(100% / 12 * 8);
 }
 
-.col-12
-{
-	width: 100%;
+.col-12 {
+    width: 100%;
 }
 
 .text-decoration-none {
@@ -96,14 +90,12 @@ img {
     display: flex;
 }
 
-.d-none
-{
-	display: none;
+.d-none {
+    display: none;
 }
 
-.d-block
-{
-	display: block;
+.d-block {
+    display: block;
 }
 
 .btn {
@@ -130,7 +122,7 @@ img {
 
 /* #region #site_header */
 #site_header {
-	background-color: var(--rl-secondary);
+    background-color: var(--rl-secondary);
     color: var(--rl-white);
 }
 
@@ -138,23 +130,21 @@ img {
     color: var(--rl-white);
 }
 
-header nav
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-header nav > .mobile_menu
-{
-	color: var(--rl-white);
-} 
+header nav>.mobile_menu {
+    color: var(--rl-white);
+}
 
-header nav > .desktop_menu
-{
-	display: none;
-} 
+header nav>.desktop_menu {
+    display: none;
+}
+
 #site_header .logo,
 #site_header .mobile_menu,
 #site_header .desktop_menu {
@@ -226,7 +216,7 @@ header nav > .desktop_menu
 #testimonials .card_testimonial {
     background-color: var(--rl-primary);
     color: var(--rl-white);
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 2rem 2rem;
     margin: 1rem 0;
     height: 100%;
@@ -246,13 +236,15 @@ header nav > .desktop_menu
 #testimonials .container p {
     color: var(--rl-lightdark);
     font-size: small;
-   
     padding-bottom: 2rem;
 }
 
 #testimonials .card_text p {
     margin-bottom: 2rem;
     color: var(--rl-white);
+    padding: 1rem 0;
+    line-height: 200%;
+    font-weight: lighter;
 }
 
 #testimonials .card .card_text a {
@@ -261,57 +253,48 @@ header nav > .desktop_menu
     letter-spacing: .15rem;
 }
 
-#testimonials .card_testimonial .avatar .bob,
-#testimonials .card_testimonial .avatar .nat,
-#testimonials .card_testimonial .avatar .celia {
+#testimonials .card_testimonial img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    flex-shrink: 0;
+    object-fit: cover;
+    /* flex-shrink: 0;*/
 }
 
 #testimonials .card>*:last-child {
     margin-top: 1rem;
 }
+
 /* #endregion #testimonials */
 
 /* #endregion #site_main  */
 
 /* Tablet media query */
 
-@media screen and (min-width: 768px)
-{
-	.d-md-none
-	{
-		display: none;
-	}
+@media screen and (min-width: 768px) {
+    .d-md-none {
+        display: none;
+    }
 
-	.d-md-block
-	{
-		display: block;
-	}
+    .d-md-block {
+        display: block;
+    }
 
-	.col-md-4
-	{
-		width: calc(100% / 12 * 4);
-	}
+    .col-md-4 {
+        width: calc(100% / 12 * 4);
+    }
 
-	.col-md-6
-	{
-		width: calc(100% / 12 * 6);
-	}
+    .col-md-6 {
+        width: calc(100% / 12 * 6);
+    }
 
-	.col-md-8
-	{
-		width: calc(100% / 12 * 8);
-	}
+    .col-md-8 {
+        width: calc(100% / 12 * 8);
+    }
 
-	.col-md-12
-	{
-		width: 100%;
-	}
+    .col-md-12 {
+        width: 100%;
+    }
 
     .f-direction-row-md {
         flex-direction: row;
@@ -322,7 +305,7 @@ header nav > .desktop_menu
         max-width: 50%;
         padding: .4rem 1.5rem;
     }
-    
+
     #services .img-fluid {
         display: block;
         max-width: 100%;
@@ -347,11 +330,12 @@ header nav > .desktop_menu
         color: var(--rl-white);
         margin-left: 2rem;
     }
+
     #site_header .desktop_menu a:last-child {
         background-color: var(--rl-white);
         color: var(--rl-black);
         text-align: center;
-        padding: 0.35rem 1rem ;
+        padding: 0.35rem 1rem;
         border-radius: 15px;
     }
 
@@ -373,30 +357,26 @@ header nav > .desktop_menu
 
 
 /* #region Debug  */
-.debug #site_header
-{
-	height: 75px;
-	background-color: lightblue;
+.debug #site_header {
+    height: 75px;
+    background-color: lightblue;
 }
 
-.debug #site_main
-{
-	height: 1500px;
-	background-color: lightcoral;
+.debug #site_main {
+    height: 1500px;
+    background-color: lightcoral;
 }
 
-.debug #services [class^='col-']
-{
-	background-color: lightgoldenrodyellow;
-	height: 250px;
-	border: 1px dashed midnightblue;
+.debug #services [class^='col-'] {
+    background-color: lightgoldenrodyellow;
+    height: 250px;
+    border: 1px dashed midnightblue;
     padding: 1rem;
 }
 
-.debug #planning [class^='col-']
-{
-	background-color: lightgoldenrodyellow;
-	border: 1px dashed midnightblue;
+.debug #planning [class^='col-'] {
+    background-color: lightgoldenrodyellow;
+    border: 1px dashed midnightblue;
     padding: 1rem;
 }
 
@@ -404,7 +384,9 @@ header nav > .desktop_menu
     background-color: lightpink;
     height: 100%;
 }
-https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFqMWEwOGZoODZlNDd0aXZucDhieDl3aHJlMTZlcnBrcHB6ODBvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kmBe7ulPXY0KI/giphy.gif
+
+https: //media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFqMWEwOGZoODZlNDd0aXZucDhieDl3aHJlMTZlcnBrcHB6ODBvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kmBe7ulPXY0KI/giphy.gif
+
 .debug .card_text {
     background-color: burlywood;
     height: 100px;
@@ -415,11 +397,10 @@ https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFqMWEwOGZoODZlNDd0aXZucDhieDl
     height: 100px;
 }
 
-.debug #site_footer
-{
-	height: 150px;
-	background-color: lightseagreen;
+.debug #site_footer {
+    height: 150px;
+    background-color: lightseagreen;
 }
 
 
-/* #endregion Debug */     
+/* #endregion Debug */
