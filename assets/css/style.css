@@ -225,22 +225,24 @@ header nav>.desktop_menu {
 #testimonials .container h5 {
     color: var(--rl-dark);
     font-weight: lighter;
-    padding: 1rem 0;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 #testimonials .container h2 {
     color: var(--rl-primary);
-    padding: 1rem 0;
+    padding-bottom: 2rem;
 }
 
 #testimonials .container p {
     color: var(--rl-lightdark);
     font-size: small;
     padding-bottom: 2rem;
+    line-height: 180%;
+
 }
 
 #testimonials .card_text p {
-    margin-bottom: 2rem;
     color: var(--rl-white);
     padding: 1rem 0;
     line-height: 200%;
