@@ -210,6 +210,16 @@ header nav > .desktop_menu
 
 /* #endregion #services */
 
+/* #region #planning */
+
+#planning {
+    background-color: var(--rl-primary);
+}
+
+
+
+
+/* #endregion #planning */
 
 
 /* #endregion #site_main  */
@@ -299,6 +309,10 @@ header nav > .desktop_menu
         min-width: 60%;
     }
 
+    .col-lg-6 {
+        max-width: calc(100 / 12 * 6);
+    }
+
    
 
 
@@ -323,6 +337,15 @@ header nav > .desktop_menu
 	border: 1px dashed midnightblue;
     padding: 1rem;
 }
+
+.debug #planning [class^='col-']
+{
+	background-color: lightgoldenrodyellow;
+	height: 1500px;
+	border: 1px dashed midnightblue;
+    padding: 1rem;
+}
+
 .debug .card {
     background-color: lightpink;
     height: 100%;
