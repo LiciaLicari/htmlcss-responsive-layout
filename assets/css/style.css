@@ -22,6 +22,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* #endregion Common*/
 
 /* #region Utilities */
@@ -256,7 +260,7 @@ header nav > .desktop_menu
     
     #services .img-fluid {
         display: block;
-        max-width: 50%;
+        max-width: 100%;
     }
 }
 
