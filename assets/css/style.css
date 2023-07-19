@@ -329,11 +329,152 @@ header nav>.desktop_menu {
     margin-top: 1rem;
 }
 
+/* #endregion #btestimonials */
+
+/* #region about */
+
+#about_us {
+    position: relative;
+}
+
+#about_us .container {
+    padding: 3rem 0;
+}
+
+#about_us .row {
+    padding-top: 2rem;
+}
+
+#about_us h1,
+#about_us h2 {
+    color: var(--rl-primary);
+}
+
+#about_us h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+#about_us h2 {
+    font-size: 1.5rem;
+}
+
+#about_us p {
+    line-height: 210%;
+    font-size: 1.1rem;
+}
+
+#about_us .profile {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#about_us .p-image {
+    position: relative;
+    background-image: url(../img/about.jpg);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    background-color: aliceblue;
+    margin-bottom: 1.5rem;
+}
+
+#about_us .p-image i {
+    position: absolute;
+    right: -15px;
+    color: var(--rl-primary);
+}
+
+#about_us .profile h2 {
+    margin-bottom: 1.5rem;
+    line-height: 130%;
+}
+
+#about_us .profile .btn i {
+    margin-right: 5px;
+}
+
+/* #endregion about */
+
+/* #region get_started */
+
+#get_started {
+    background-color: var(--rl-primary);
+    position: relative;
+}
+
+#get_started h1 {
+    font-size: 4rem;
+    color: var(--rl-accent);
+    padding: 2rem 0;
+}
+
+#get_started h4 {
+    color: var(--rl-white);
+    font-size: 1.75rem;
+    line-height: 150%;
+    padding: 1rem;
+}
+
+#get_started h5 {
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: var(--rl-white)
+    letter-spacing: 2px;
+}
+
+#get_started .claim {
+    color: var(--rl-white);
+    line-height: 170%;
+    padding: 1rem;
+}
+
+#get_started .btn {
+    text-decoration: none;
+    color: var(--rl-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+}
+
+#get_started .policies {
+    line-height: 120%;
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: var(--rl-white)
+}
+
+#get_started .policies a {
+    color: var(--rl-white);
+}
 
 
+/* #endregion get_started */
 
-/* #endregion #benefits */
+/* #region #site_footer */
 
+#site_footer {
+    background-color: var(--rl-dark);
+    color: var(--rl-white);
+}
+
+#site_footer .container {
+    padding: 2rem 0;
+}
+
+#site_footer .top {
+    /* padding-bottom: 4rem; */
+    padding-bottom: 3rem;
+}
+
+#site_footer .bottom a {
+    color: var(--rl-primary);
+}
+
+/* #endregion #site_footer */
 
 /* #endregion #site_main  */
 
@@ -394,6 +535,22 @@ header nav>.desktop_menu {
     #testimonials header h1 {
         padding-top: 1rem;
     }
+
+    #about_us h2 {
+        font-size: 5rem;
+        padding: 3rem 0;
+    }
+
+    #about_us p {
+        padding: 2rem 4rem 2rem 0;
+    }
+
+    #get_started .container,
+    #site_footer .container {
+        max-width: 500px;
+    }
+
+
 }
 
 
@@ -452,6 +609,13 @@ header nav>.desktop_menu {
         margin: 2rem 3rem 2rem 1rem;
     }
 
+    #about_us p {
+        font-size: 1.2rem;
+    }
+
+    #about_us h2 {
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -497,9 +661,29 @@ https: //media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFqMWEwOGZoODZlNDd0aXZucDhieD
     height: 100px;
 }
 
+.debug #about_us {
+    height: 2000px;
+    background-color: orangered;
+}
+
+.debug #about_us h2 {
+    background-color: greenyellow;
+    height: 100px;
+}
+
+.debug #about_us p {
+    height: 900px;
+    background-color: aquamarine;
+}
+
+.debug #get_started {
+    height: 900px;
+    background-color: papayawhip
+}
+
 .debug #site_footer {
     height: 150px;
-    background-color: lightseagreen;
+    background-color: lightsalmon;
 }
 
 
