@@ -274,7 +274,9 @@ header nav>.desktop_menu {
 
 /* #region #testimonials */
 
-
+#testimonials {
+    position: relative;
+}
 
 #testimonials .card_testimonial {
     background-color: var(--rl-primary);
@@ -330,8 +332,10 @@ header nav>.desktop_menu {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    /* flex-shrink: 0;*/
+    background-position: center;
+    flex-shrink: 0;
 }
 
 #testimonials .card>*:last-child {
@@ -342,7 +346,65 @@ header nav>.desktop_menu {
 
 /* #region #benefits */
 
+#benefits {
+    background-color: var(--rl-primary);
+    position: relative;
+}
 
+#benefits .row {
+    margin: 0 -1rem
+}
+
+.btn_bf {
+    text-decoration: none;
+    background-color: var(--rl-primary);
+    color: var(--rl-white);
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+}
+
+#benefits [class^="col-"] {
+    padding: 1rem;
+}
+
+#benefits .container>h1 {
+    color: var(--rl-white);
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    line-height: 130%;
+}
+
+#benefits .card {
+    background-color: var(--rl-white);
+    border-radius: 30px;
+    padding: 2.5rem 2rem;
+}
+
+#benefits h1,
+#benefits h2 {
+    color: var(--rl-primary);
+}
+
+#benefits .card h1 {
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+#benefits .card h2 {
+    padding-top: 2rem;
+}
+
+#benefits .card p {
+    padding: 1.5rem 0;
+    color: var(--rl-dark);
+}
+
+#benefits .card .btn {
+    letter-spacing: 3px;
+}
 
 /* #endregion #benefits */
 
@@ -367,7 +429,7 @@ header nav>.desktop_menu {
 
 #about_us h1 {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-bottom: 3rem;
 }
 
@@ -407,6 +469,11 @@ header nav>.desktop_menu {
     line-height: 130%;
 }
 
+#about_us .btn {
+    padding: 1rem;
+    letter-spacing: normal;
+}
+
 #about_us .profile .btn i {
     margin-right: 5px;
 }
@@ -436,7 +503,7 @@ header nav>.desktop_menu {
 #get_started h5 {
     font-size: 1.15rem;
     font-weight: 100;
-    color: var(--rl-white)
+    color: rgba(255, 255, 255, 0.446);
     letter-spacing: 2px;
 }
 
@@ -561,6 +628,7 @@ header nav>.desktop_menu {
         font-size: 5rem;
         padding: 3rem 0;
     }
+    
 
     #about_us p {
         padding: 2rem 4rem 2rem 0;
