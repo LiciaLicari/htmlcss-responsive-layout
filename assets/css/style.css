@@ -38,12 +38,17 @@ img {
     max-width: 1152px;
     width: 80%;
     margin: auto;
+    padding: 3rem 0;
 }
 
 /*rimangono fuori 24 e 24 pxl*/
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap {
     flex-wrap: wrap;
 }
 
@@ -208,14 +213,68 @@ header nav>.desktop_menu {
 
 #planning {
     background-color: var(--rl-primary);
+    position: relative;
 }
 
+#planning .left {
+    color: var(--rl-white);
+}
+
+
+#planning .right .card {
+    background-color: var(--rl-white);
+    border-radius: 45px;
+    text-align: center;
+}
+
+#planning .row {
+    margin: 0 -2rem;
+}
+
+#planning [class^="col-"] {
+    padding: 0 2rem;
+}
+
+#planning .card {
+    height: 100%;
+}
+
+#planning .left .card h2 {
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+#planning [class^="col-"].right {
+    margin-top: 2rem;
+}
+
+#planning .right .card {
+    padding: 2rem 1rem;
+}
+
+#planning .right .card h2 {
+    padding: 1rem 0;
+}
+
+#planning .right .card p {
+    font-style: italic;
+}
+
+#planning .freccia {
+    background-color: var(--rl-primary);
+    border-radius: 50%;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+    color: var(--rl-black);
+}
 
 
 
 /* #endregion #planning */
 
 /* #region #testimonials */
+
+
 
 #testimonials .card_testimonial {
     background-color: var(--rl-primary);
@@ -224,6 +283,8 @@ header nav>.desktop_menu {
     padding: 2rem 2rem;
     margin: 1rem 0;
     height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #testimonials .container h5 {
@@ -240,17 +301,23 @@ header nav>.desktop_menu {
 
 #testimonials .container p {
     color: var(--rl-lightdark);
-    font-size: small;
+    font-size:medium;
     padding-bottom: 2rem;
     line-height: 180%;
 
 }
 
+#testimonials .testimonial {
+    font-size: larger;
+    text-align:start;
+    padding: 1rem 3rem;
+}
+
 #testimonials .card_text p {
     color: var(--rl-white);
-    padding: 1rem 0;
+    padding: 1rem 3rem;
     line-height: 200%;
-    font-weight: lighter;
+    text-align: start;
 }
 
 #testimonials .card .card_text a {
@@ -275,61 +342,9 @@ header nav>.desktop_menu {
 
 /* #region #benefits */
 
-#testimonials .card_testimonial {
-    background-color: var(--rl-primary);
-    color: var(--rl-white);
-    border-radius: 30px;
-    padding: 2rem 2rem;
-    margin: 1rem 0;
-    height: 100%;
-}
 
-#testimonials .container h5 {
-    color: var(--rl-dark);
-    font-weight: lighter;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-}
 
-#testimonials .container h2 {
-    color: var(--rl-primary);
-    padding-bottom: 2rem;
-}
-
-#testimonials .container p {
-    color: var(--rl-lightdark);
-    font-size: small;
-    padding-bottom: 2rem;
-    line-height: 180%;
-
-}
-
-#testimonials .card_text p {
-    color: var(--rl-white);
-    padding: 1rem 0;
-    line-height: 200%;
-    font-weight: lighter;
-}
-
-#testimonials .card .card_text a {
-    color: var(--rl-white);
-    background-color: var(--rl-secondary);
-    letter-spacing: .15rem;
-}
-
-#testimonials .card_testimonial img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    /* flex-shrink: 0;*/
-}
-
-#testimonials .card>*:last-child {
-    margin-top: 1rem;
-}
-
-/* #endregion #btestimonials */
+/* #endregion #benefits */
 
 /* #region about */
 
@@ -509,6 +524,12 @@ header nav>.desktop_menu {
         flex-direction: row;
     }
 
+    .f-direction-column {
+        flex-direction: column;
+    }
+    
+    
+
     #services .card .btn-lg {
         display: block;
         max-width: 50%;
@@ -591,6 +612,15 @@ header nav>.desktop_menu {
 
     .col-lg-6 {
         width: calc(100% / 12 * 6);
+    }
+
+
+    #planning .left img {
+        padding-bottom: 10rem;
+    }
+
+    #planning .right {
+        padding-top: 12rem;
     }
 
     #testimonials header h5,
